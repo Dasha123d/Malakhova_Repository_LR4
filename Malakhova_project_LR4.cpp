@@ -16,6 +16,7 @@ void checkDigitPresence(const string& strX, char A, bool &noA, int &countA) {
 
 // Функция для подсчета вхождений цифры A в числе X
 int countDigitOccurrences(const string& strX, char A) {
+    noA = (strX.find(A) == string::npos);
 }
 
 int main() {
