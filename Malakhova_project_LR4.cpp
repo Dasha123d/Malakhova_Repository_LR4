@@ -8,6 +8,8 @@ void inputNaturalNumber(unsigned long long &number) {
 
 // Функция для ввода цифры
 void inputDigit(int &digit) {
+    cout << "Введите цифру A (от 0 до 9): ";
+    cin >> digit;
 }
 
 // Функция для проверки, есть ли цифра A в числе X
