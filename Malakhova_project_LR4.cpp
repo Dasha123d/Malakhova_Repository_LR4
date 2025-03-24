@@ -16,7 +16,16 @@ void checkDigitPresence(const string& strX, char A, bool &noA, int &countA) {
 
 // Функция для подсчета вхождений цифры A в числе X
 int countDigitOccurrences(const string& strX, char A) {
+    int count = 0;
+    for (char digit : strX) {
+        if (digit == A) {
+            count++;
+        }
+    }
+    return count;
 }
+
+
 
 int main() {
     unsigned long long x;
