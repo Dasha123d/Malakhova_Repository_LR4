@@ -15,6 +15,7 @@ void inputDigit(int &digit) {
 }
 // Функция для проверки, есть ли цифра A в числе X
 bool checkDigitPresence(const string& strX, char A) {
+    return strX.find(A) == string::npos;
 }
 
 // Функция для подсчета вхождений цифры A в числе X
