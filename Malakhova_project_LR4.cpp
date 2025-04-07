@@ -15,12 +15,22 @@ void inputDigit(int &digit) {
 }
 // Функция для проверки, есть ли цифра A в числе X
 bool checkDigitPresence(const string& strX, char A) {
+    return strX.find(A) == string::npos;
 }
 
 // Функция для подсчета вхождений цифры A в числе X
 int countDigitOccurrences(const string& strX, char A) {
-    noA = (strX.find(A) == string::npos);
+    int count = 0;
+    for (char digit : strX) {
+        if (digit == A) {
+            count++;
+        }
+    }
+    return count;
+    noA = (strX.find(A) == string::npos)
 }
+
+
 
 int main() {
     unsigned long long x;
